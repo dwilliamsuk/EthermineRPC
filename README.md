@@ -1,5 +1,5 @@
 # EthermineRPC
-Discord Rich Presence for https://ethermine.org/
+Discord Rich Presence for https://ethermine.org/ written in Python
 
 ![EthermineRPC Example](https://i.jaffasite.ga/2021/02/EthermineRPC.png)
 

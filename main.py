@@ -45,6 +45,9 @@ def updateRPC():
     usd = eth * stats[4]
     details = str(eth)+ ' ETH'
     state = '${:.2f}'.format(usd)+ ' USD'
+    if str(config['DISCORDRPC']['ShowDashButton']) == 'False':
+        RPC.update(state=state, details=details, start=time.time(), end=str(int(time.time()+refreshtime)), large_image=large_image, large_text=large_text)
+        return
     RPC.update(state=state, details=details, start=time.time(), end=str(int(time.time()+refreshtime)), buttons=[{"label": "Ethermine Dashboard", "url": "https://ethermine.org/miners/" +MinerID+ "/dashboard"}], large_image=large_image, large_text=large_text)
     return
 

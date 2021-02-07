@@ -19,6 +19,7 @@ Edit config.ini as follows:
 | ClientID | Your RPC Client ID (Check Important Notes) |
 | LargeImage | RPC Art Asset Name To Use (Check Important Notes) |
 | LargeImageText | Large Image Asset Text |
+| ShowDashButton | Option to Show or Hide the Dashboard Button - Can be 'True' or 'False' |
 | RefreshTime | Refresh Time (in seconds) |
 
 ## Usage

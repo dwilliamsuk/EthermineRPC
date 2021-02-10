@@ -29,20 +29,19 @@ def lateststats(stats):
         quit()
     latest = stats['data']['currentStatistics']
     monies = stats['data']['currentStatistics']['unpaid']
-    workers = stats['data']['currentStatistics']['activeWorkers']
     url = "https://min-api.cryptocompare.com/data/price?fsym=ETH&tsyms=BTC,USD"
     response = requests.request("GET", url)
     pricing = response.json()
     BTC = pricing['BTC']
     USD = pricing['USD']
-    return [latest, monies, workers, BTC, USD]
+    return [latest, monies, BTC, USD]
 
 def updateRPC():
     stats = lateststats(getstats(MinerID))
     eth = stats[1] / 1000000000000000000
     eth = round(eth, 5)
-    btc = round(eth * stats[3], 5)
-    usd = eth * stats[4]
+    btc = round(eth * stats[2], 5)
+    usd = eth * stats[3]
     details = str(eth)+ ' ETH'
     state = '${:.2f}'.format(usd)+ ' USD'
     if str(config['DISCORDRPC']['ShowDashButton']) == 'True':

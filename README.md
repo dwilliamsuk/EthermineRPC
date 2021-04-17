@@ -1,7 +1,7 @@
 # EthermineRPC
 Discord Rich Presence for https://ethermine.org/ written in Python
 
-![EthermineRPC Example](https://i.jaffasite.ga/2021/02/EthermineRPC.png)
+![EthermineRPC Example](https://ipfs.io/ipfs/QmTnGReGDM7mcWf6HcYrEkURvLeR9584yWw6Wha9sKCYat?filename=etherminerpc-py.png)
 
 ## Installation
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install requirements.
